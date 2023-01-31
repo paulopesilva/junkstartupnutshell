@@ -75,36 +75,36 @@ function waitAndResponce(inputText) {
                 sendTextMessage("Olá 👋🏻,<br><br>Meu nome é <span class='bold'><a class='alink'>Paulo Lopes da Silva</a>.</span><br><br>Sou professor e fundador da StartUp NutShell <span class='bold'> (aplicações tecnológicas e inovações educacionais) 👨🏻‍💻📚</span><br><br> Sou, também, pesquisador com formação em Física teórica e experimental. Mestrado e doutorado em Física Nuclear e Astrofísica 👨🏻‍💻📚 O meu interesse atual é nas aplicações físicas e sua interface com a Internet das Coisas (IoT), machine learning e automação residencial para casas inteligentes.<br><br>digite, por favor, <span class='bold'>'help'</span> para mais informações sobre oos nossos cursos e acesso às nossas mídias sociais.<br>");
             }, 2000);
             break;
-        case "help":
+        case "Help":
             sendTextMessage("<span class='sk'> Digite uma palavra-chave sobre um tema...<br>e.g<br><span class='bold'>'habilidades'</span> - para minhas atividades técnicas<br><span class='bold'>'curriculo'</span> - para acessar meu histórico profissional<br><span class='bold'>'educação'</span> - para mais detalhes da minha formação técnica<br><span class='bold'>'endereço'</span> - para visualizar nossa localização<br><span class='bold'>'contato'</span> - para acessar nosso contato<br><span class='bold'>'projetos'</span> - para visualizar alguns projetos<br><span class='bold'>'limpar'</span> - para recomeçar/voltar menu<br><span class='bold'>'sobre'</span> - para mais informações do nosso blog</span>");
             break;
-        case "curriculo":
+        case "Curriculo":
             sendTextMessage(resumeString);
             break;
-        case "habilidades":
+        case "Habilidades":
             sendTextMessage("<span class='sk'> Desenvolvo, atualmente, pesquisa na área de internet das coisas com aplicações em automação residencial e casas inteligentes.<br><br> Aplicações técnicas da física com integração à eletronica e à computação :<br><span class='bold'>Java<br>C++<br>C<br>PHP<br>Git<br>\LaTex<br>Python<br>CSS<br>HTML</span><br><br>Tenho, também, experiência com :<span class='bold'><br>Android<br>DOS<br>Linux");
             break;
 
-        case "educação":
+        case "Educação":
             sendTextMessage("Possuo bacharelado, mestrado e doutorado em Física aplicada à pesquisa básica.<br>Graduação em Física: 1996<br><br>1998: mestrado em Física Nuclear<br>PhD. em Física:2002");
             break;
 
-        case "endereço":
+        case "Endereço":
             sendTextMessage(addressString);
             break;
-        case "limpar":
+        case "Limpar":
             clearChat();
             break;
-        case "sobre":
+        case "Sobre":
             sendTextMessage("🛠️💻 Acesse nossa página para download dos portfólios dos nossos cursos!<br><br>👨🏻‍💻 ");
             break;
-        case "contato":
+        case "Contato":
             sendTextMessage(contactString);
             break;
-        case "projetos":
+        case "Projetos":
             sendTextMessage("veja vídeos de alguns dos nossos projetos no nosso canal e mídias sociais");
             break;
-        case "new":
+        case "New":
             sendTextMessage(addressString);
             break;
         default:
